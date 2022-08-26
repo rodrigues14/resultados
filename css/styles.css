@@ -1,6 +1,9 @@
 * {
     font-family: arial;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
 }
 
 img {
@@ -8,28 +11,24 @@ img {
 }
 
 #container {
-    margin-top: 60px;
-    width: 80%;
     max-width: 380px;
     margin-inline: auto;
+    margin-top: 70px;
 }
 
 body {
     text-align: center;
     background-color: #006400;
-    color: white
+    color: white;
+    height: calc(100vh -70px);
 }
 
 h1 {
     font-size: 2rem;
 }
 
-#p1 {
-    margin-bottom: 20px;
-}
-
 p {
-    margin-bottom: 30px;
+    margin: 20px 30px;
 }
 
 input,
@@ -42,7 +41,7 @@ button {
     border: none;
 }
 
-input {
+input, #p1 {
     margin-bottom: 20px;
 }
 
@@ -50,7 +49,7 @@ button {
     background-color: #1C1C1C;
     border: none;
     color: white;
-    transition: filter .2s;
+    transition: filter .3s;
 }
 
 button:hover {
@@ -58,12 +57,7 @@ button:hover {
     cursor: pointer;
 }
 
-#resposta {
-    margin-top: 7px;
-    transition: opacity 1s;
-}
-
-#pergunta {
-    font-size: 18px;
-    opacity: .8;
+#pergunta, #resposta {
+    font-size: 22px;
+    margin: 14px 0 0;
 }
